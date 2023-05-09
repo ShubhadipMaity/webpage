@@ -1,0 +1,60 @@
+.home .carousel-item {
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    /* filter: brightness(0.6); */
+}
+
+.navbar {
+    transition: all 0.5s;
+}
+
+.navbar-scrolled {
+    /* background-color:brown; */
+    /* background-color: rgb(125, 15, 73); */
+    background-color: black;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.nav-link {
+    /* transition: all 0.2s; */
+    position: relative;
+}
+
+
+
+.nav-link::after {
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+.nav-link:hover::after {
+    content: '';
+    opacity: 1;
+    height: 2px;
+    width: 100%;
+    background-color: brown;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* custom scrollbar */
+
+::-webkit-scrollbar{
+    width: 15px;
+
+}
+::-webkit-scrollbar-track{
+    background: #d1e5ff;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#ac3370,#90d4f0);
+}
+/* .container{
+    height: 100vh;
+    background-image: url(F:/WEBPAGE_DEMO1/image/img_7.jpg);
+}
+.content{
+    padding: 50px;
+} */
